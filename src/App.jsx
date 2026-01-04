@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { LucideGraduationCap, LucideClipboardList, LucideUser, LucideLogOut, LucideArrowRight, LucideCheckCircle, LucideAlertCircle, LucideBookOpen, LucideAward, LucideHexagon } from 'lucide-react';
+import { GraduationCap as LucideGraduationCap, ClipboardList as LucideClipboardList, User as LucideUser, LogOut as LucideLogOut, ArrowRight as LucideArrowRight, CheckCircle as LucideCheckCircle, AlertCircle as LucideAlertCircle, BookOpen as LucideBookOpen, Award as LucideAward, Hexagon as LucideHexagon } from 'lucide-react';
 
 // --- DATA SOURCE (Embed of teachce_knowledge_base.json) ---
 const knowledgeBase = {
