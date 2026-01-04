@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { LucideGraduationCap, LucideClipboardList, LucideUser, LucideLogOut, LucideArrowRight, LucideCheckCircle, LucideAlertCircle, LucideBookOpen, LucideAward, LucideHexagon } from 'lucide-react';
 
 // --- DATA SOURCE (Embed of teachce_knowledge_base.json) ---
@@ -163,9 +163,7 @@ const Quiz = ({ user, onBack }) => {
   const [showResult, setShowResult] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isCorrect, setIsCorrect] = useState(null);
-  const [questions, setQuestions] = useState([]);
-
-  useEffect(() => {
+  const [questions] = useState(() => {
     const generated = [];
     const domains = knowledgeBase.knowledge_domains;
     Object.entries(domains).forEach(([key, domain]) => {
@@ -182,8 +180,8 @@ const Quiz = ({ user, onBack }) => {
         });
       }
     });
-    setQuestions(generated.sort(() => Math.random() - 0.5).slice(0, 5));
-  }, []);
+    return generated.sort(() => Math.random() - 0.5).slice(0, 5);
+  });
 
   const handleAnswerClick = (option) => {
     if (selectedAnswer) return;
@@ -307,7 +305,7 @@ const Survey = ({ user, onBack }) => {
             <LucideCheckCircle className="text-green-600 w-10 h-10" />
           </div>
           <h2 className="text-3xl font-black text-slate-900 mb-4">Feedback Received</h2>
-          <p className="text-slate-500 mb-8 text-lg font-medium">Thank you for helping us improve TeachCE.</p>
+          <p className="text-slate-500 mb-8 text-lg font-medium">Thank you for helping us improve TeachCE, {user.name}.</p>
           <div className="flex gap-4 justify-center">
             <button onClick={() => setSubmitted(false)} className="bg-yellow-400 text-black px-6 py-2 rounded-lg font-bold hover:bg-yellow-500 transition-colors">Submit Another</button>
             <button onClick={onBack} className="text-slate-500 hover:text-black font-bold px-4 py-2">Return Home</button>
