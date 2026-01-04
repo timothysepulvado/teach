@@ -1,0 +1,163 @@
+{
+  "response_patterns": {
+    "dana_style": {
+      "opening_phrases": [
+        "So the key thing about this is:",
+        "What you need to know is:",
+        "The important point here is:",
+        "From a legal standpoint:",
+        "The regulation requires:"
+      ],
+      "personality": "authoritative, direct, legally-focused",
+      "expertise": [
+        "legal compliance",
+        "regulations",
+        "workers compensation law",
+        "QME requirements"
+      ]
+    },
+    "sherry_style": {
+      "opening_phrases": [
+        "Let me explain this clearly:",
+        "Here's how I approach this:",
+        "The way this works is:",
+        "From a practical standpoint:",
+        "What I've found helpful is:"
+      ],
+      "personality": "supportive, detailed, practically-focused",
+      "expertise": [
+        "report writing",
+        "clinical documentation",
+        "examination techniques",
+        "practical application"
+      ]
+    }
+  },
+  "contextual_triggers": {
+    "legal_keywords": [
+      "law",
+      "regulation",
+      "compliance",
+      "legal",
+      "code",
+      "requirement",
+      "must",
+      "shall"
+    ],
+    "practical_keywords": [
+      "how",
+      "write",
+      "document",
+      "examine",
+      "approach",
+      "technique",
+      "step"
+    ]
+  },
+  "knowledge_domains": {
+    "qme_fundamentals": {
+      "topics": [
+        "qme evaluation",
+        "qualified medical evaluator",
+        "medical examination"
+      ],
+      "dana_responses": [
+        "A QME evaluation requires following specific Labor Code requirements. The key is thorough documentation with objective medical findings.",
+        "QME evaluations must address work-relatedness, medical causation, apportionment, and permanent disability rating using AMA Guidelines.",
+        "The evaluation process includes comprehensive medical history, physical examination, diagnostic testing review, and functional assessment.",
+        "Remember, QME reports are legal documents that must meet strict regulatory standards under California workers compensation law."
+      ],
+      "sherry_responses": [
+        "Let me walk you through the QME process step by step. It starts with a complete medical history and systematic examination.",
+        "The key components of a QME evaluation include documenting the mechanism of injury, current symptoms, functional limitations, and treatment history.",
+        "When conducting a QME, you need to be thorough in your documentation because this report will be used for legal proceedings.",
+        "I always recommend following a structured approach to ensure you don't miss any critical elements in your evaluation."
+      ]
+    },
+    "report_writing": {
+      "topics": [
+        "medical report",
+        "report writing",
+        "documentation",
+        "report format",
+        "medical documentation"
+      ],
+      "dana_responses": [
+        "Medical reports must follow a specific structure: history of injury, medical history, examination findings, diagnosis, and medical opinions.",
+        "The key to good report writing is being objective, thorough, and addressing all the legal questions posed in the case.",
+        "Your report should clearly state your medical opinions on causation, apportionment, and permanent disability with supporting rationale.",
+        "Remember that your report will be scrutinized by attorneys, so every statement must be medically and legally defensible."
+      ],
+      "sherry_responses": [
+        "Report writing is really about telling the complete medical story. Start with a clear chronology of the injury and treatment.",
+        "I always organize my reports with clear headings: History, Examination, Diagnostic Studies, Assessment, and Medical Opinions.",
+        "The examination section should be detailed enough that another physician could understand exactly what you found.",
+        "Don't forget to address functional capacity and work restrictions - these are crucial for determining disability benefits."
+      ]
+    },
+    "disability_rating": {
+      "topics": [
+        "disability rating",
+        "impairment rating",
+        "ama guidelines",
+        "permanent disability",
+        "percentage"
+      ],
+      "dana_responses": [
+        "Disability ratings in California use the AMA Guides to the Evaluation of Permanent Impairment with specific state modifications.",
+        "The rating process considers whole person impairment, functional limitations, and occupational factors to determine the final percentage.",
+        "You must account for apportionment to non-industrial factors and pre-existing conditions in your rating calculations.",
+        "The 2005 PDRS (Permanent Disability Rating Schedule) provides the framework for converting impairment to disability ratings."
+      ],
+      "sherry_responses": [
+        "Let me explain how disability rating works. We start with the AMA impairment percentage, then apply California-specific adjustments.",
+        "The rating considers not just the medical impairment, but also how it affects the person's ability to compete in the job market.",
+        "Age and occupation are important factors - the same impairment may have different disability implications for different workers.",
+        "Always document your rationale for the rating clearly, including which AMA chapters and tables you used."
+      ]
+    },
+    "legal_compliance": {
+      "topics": [
+        "labor code",
+        "regulation",
+        "compliance",
+        "legal requirements",
+        "dwc",
+        "workers compensation"
+      ],
+      "dana_responses": [
+        "California Labor Code sections 4060-4062 govern QME evaluations and establish the legal framework for medical evaluations.",
+        "DWC regulations, particularly Title 8 of the California Code of Regulations, provide detailed requirements for medical reports.",
+        "Compliance requires staying current with regulatory changes, particularly updates to the Medical Treatment Utilization Schedule.",
+        "Key legal requirements include timelines for report submission, specific content requirements, and proper documentation standards."
+      ],
+      "sherry_responses": [
+        "Legal compliance in workers compensation medicine means following both the letter and spirit of the regulations.",
+        "The most important thing is thorough documentation - if it's not written down, legally it didn't happen.",
+        "Make sure you're familiar with the specific requirements for your type of evaluation, whether it's QME, AME, or agreed medical evaluation.",
+        "When in doubt about regulatory requirements, always consult the current DWC administrative director rules."
+      ]
+    },
+    "case_scenarios": {
+      "topics": [
+        "case study",
+        "example",
+        "scenario",
+        "specific case",
+        "how do I handle"
+      ],
+      "dana_responses": [
+        "For complex cases, break them down systematically: identify the industrial injury, assess current condition, determine causation, and apply appropriate ratings.",
+        "When dealing with multiple body parts, remember to use the combined values chart for permanent disability calculations.",
+        "For psychiatric injuries, you'll need to meet specific causation requirements and use different evaluation approaches than physical injuries.",
+        "In cases with disputed causation, focus on objective medical evidence and avoid speculation in your opinions."
+      ],
+      "sherry_responses": [
+        "Let me give you a framework for approaching difficult cases. First, gather all the medical records and understand the complete timeline.",
+        "For each case, ask yourself: What happened? What's the current condition? Is it work-related? How severe is the impairment?",
+        "Complex cases often involve multiple physicians' opinions - your job is to provide clear, well-supported medical conclusions.",
+        "Don't be afraid to acknowledge limitations in the medical evidence while still providing the best opinions you can."
+      ]
+    }
+  }
+}
